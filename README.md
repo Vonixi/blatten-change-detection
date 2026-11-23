@@ -6,8 +6,7 @@ orthophotos of 19 May (pre-event) and 30 May 2025 (post-event) over Blatten.
 
 **Main result:** 289 of the 377 pre-event buildings that swisstopo later removed from swissTLM3D are
 detected as changed, and 33 of 191 buildings still standing are wrongly flagged (building-level precision
-0.90, recall 0.77, F1 0.83; 0.81 ± 0.02 over three training seeds). The pixel-wise RGB-difference baseline
-from the course reaches a building F1 of 0.22.
+0.90, recall 0.77, F1 0.83; 0.81 ± 0.02 over three training seeds). The pixel-wise RGB-difference baseline from the course reaches a building F1 of 0.22.
 
 ![Pre-event buildings assessed by the model](outputs/figures/03_building_assessment.png)
 
@@ -255,15 +254,9 @@ All data are open data from the Federal Office of Topography swisstopo, accessed
 Generative AI (Claude, Anthropic) was used as an assistant for the technical implementation of this
 project, mainly for:
 
-- **Coding:** help with writing, restructuring and debugging the Python code in the notebooks (for example
-  data access through the STAC API, raster and vector processing, the training and evaluation code, and
-  the interactive map).
-- **Troubleshooting:** help with error messages, package versions and the conda environment, and with
-  running the training on Google Colab.
-- **Documentation:** suggestions for code comments, the structure of the notebooks and this README, and
-  language editing.
-- **Repository setup:** help with organising the folders and the Git/GitHub workflow following the
-  course guidelines.
+- **Coding:** help with writing, restructuring and debugging the Python code in the notebooks.
+- **Troubleshooting:** help with error messages, package versions and the conda environment.
+- **Documentation:** language editing.
 
 AI suggestions were reviewed, tested and adapted before they were used. The methodological framework
 follows the course material and the literature listed above.
