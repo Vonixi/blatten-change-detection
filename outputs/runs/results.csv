@@ -1,0 +1,5 @@
+model,patch,augment,same_place,photometric,loss,frozen,seed,pairs/epoch,max epochs,epochs,val F1,threshold,F1@0.5,F1,IoU,checkpoint
+fcsiamdiff-resnet18,256,True,0.3,True,dice,False,0,256,30,30,0.757,0.05,0.67,0.66,0.492,outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_seed0/epoch=25-step=832.ckpt
+fcsiamdiff-resnet18,256,True,0.3,True,dice,False,0,512,80,69,0.786,0.02,0.746,0.75,0.6,outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed0/epoch=53-step=3456.ckpt
+fcsiamdiff-resnet18,256,True,0.3,True,dice,False,1,512,80,69,0.775,0.01,0.73,0.74,0.588,outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed1/epoch=53-step=3456.ckpt
+fcsiamdiff-resnet18,256,True,0.3,True,dice,False,2,512,80,45,0.783,0.7,0.689,0.69,0.527,outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed2/epoch=29-step=1920.ckpt

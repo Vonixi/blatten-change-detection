@@ -1,0 +1,24 @@
+# Data (downloaded and re-created by notebook 1)
+data/
+
+# Large or temporary outputs
+outputs/results/change_probability.tif
+colab_runs/
+colab_runs.zip
+
+# Model checkpoints: keep only the selected model (used by notebooks 3 and 4)
+outputs/runs/checkpoints/*
+!outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed0/
+
+# Python cache files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+.env
+
+# System files
+.DS_Store
+Thumbs.db

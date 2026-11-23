@@ -1,0 +1,15 @@
+{
+  "experiment": "fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed0",
+  "checkpoint": "outputs/runs/checkpoints/fcsiamdiff-resnet18_p256_aug1_same0.3_photo1_dice_freeze0_lr0.001_n512_ep80_seed0/epoch=53-step=3456.ckpt",
+  "threshold": 0.02,
+  "mean": [
+    101.11626980430202,
+    113.97921431692023,
+    86.82212753295899
+  ],
+  "std": [
+    42.5782847982544,
+    40.90844275541763,
+    39.69548189617742
+  ]
+}
