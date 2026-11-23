@@ -244,8 +244,7 @@ All data are open data from the Federal Office of Topography swisstopo, accessed
   Vision (ICCV)*, 15193–15202.
 - Zheng, Z., Ermon, S., Kim, D., Zhang, L., & Zhong, Y. (2024). Changen2: Multi-temporal remote sensing
   generative change foundation model. *IEEE Transactions on Pattern Analysis and Machine Intelligence*.
-- SDS320 lecture material (L02–L10) and the SDS210 course book *Programming with Spatial Data*
-  (<https://hendrikwulf.github.io/sds210-jb/>).
+- SDS320 lecture material (L02–L10) and the SDS210 course book.
 
 ---
 
@@ -256,7 +255,7 @@ project, mainly for:
 
 - **Coding:** help with writing, restructuring and debugging the Python code in the notebooks.
 - **Troubleshooting:** help with error messages, package versions and the conda environment.
-- **Documentation:** language editing.
+- **Documentation:** Language editing and structuring of the README.
 
 AI suggestions were reviewed, tested and adapted before they were used. The methodological framework
 follows the course material and the literature listed above.
