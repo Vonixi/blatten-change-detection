@@ -95,18 +95,12 @@ downloaded `colab_runs.zip` into the project root.
 
 ## Method
 
-The course covers two kinds of building-change methods. Post-classification segments buildings on each
-date and compares the maps (L07). Direct change detection works on the image pair (L10). L10 page 1 notes
-that the errors of two classifications add up (0.9 × 0.9 = 81%), and that with very high-resolution
-imagery a deep-learning model that sees both images is the stronger choice. This project therefore
-follows L10 page 8: the TorchGeo `ChangeDetection` task, FC-Siam-diff with a pretrained ResNet18, Dice
+This project follows the TorchGeo `ChangeDetection` task from L10 in the course website, FC-Siam-diff with a pretrained ResNet18, Dice
 loss, a Lightning `Trainer` with checkpointing and early stopping on validation F1, threshold tuning on
 validation, and a single test.
 
-The main difference from page 8 is the training data. Page 8 trains on OSCD, which provides labeled image
-pairs. For the Lötschental there is one date (SWISSIMAGE 2023) with building labels (swissTLM3D). The
-pretrained model of pages 5–7, ChangeStar, was built for this situation, and its single-temporal
-supervision (STAR, Zheng et al. 2021) is the idea used here:
+The main difference is the training data. For the Lötschental there is one date (SWISSIMAGE 2023) with building labels (swissTLM3D). The
+pretrained model of pages 5–7 in L10 of the course website, ChangeStar, was built for this situation, and its single-temporal supervision (STAR, Zheng et al. 2021) is the idea used here:
 
 - **STAR pairs:** two different chips are used as "before" and "after", and the change label is
   `mask_i XOR mask_j`.
@@ -114,8 +108,7 @@ supervision (STAR, Zheng et al. 2021) is the idea used here:
   1 m. These pairs contain no change and teach the model to ignore illumination and small misalignment
   (page 2).
 
-The labels are exact by construction, and Blatten is never used for training, model selection or
-threshold choice.
+The labels are exact by construction, and Blatten is never used for training, model selection or threshold choice.
 
 ## Project plan (L10 page 9)
 
@@ -153,7 +146,7 @@ imagery.
 
 **Threshold strategy.** The seed and the threshold are chosen once, by F1 on the validation pairs (seed 0,
 threshold 0.02), and are not changed for Blatten. The validation F1 curve is flat (0.78–0.79 for every
-threshold), so the choice matters little. Page 7's Otsu-thresholded RGB difference serves as the baseline.
+threshold), so the choice matters little. The Otsu-thresholded RGB difference serves as the baseline.
 
 **Validation.**
 
